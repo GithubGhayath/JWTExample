@@ -1,0 +1,1 @@
+public class RefreshTokenException(string message):Exception(message);
