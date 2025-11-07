@@ -354,3 +354,6 @@ C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.API\obj\Debug\
 C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.API\obj\Debug\net9.0\Authenti.42C78034.Up2Date
 C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.API\obj\Debug\net9.0\Authentication.API.genruntimeconfig.cache
 C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.API\obj\Debug\net9.0\ref\Authentication.API.dll
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -8,6 +8,12 @@ using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+// This is for maps to controllers
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
@@ -130,6 +136,10 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseSwagger();      // exposes /swagger/v1/swagger.json
+    app.UseSwaggerUI();    // exposes Swagger UI at /swagger
+
+    /* These are for Scalar UI
     app.MapOpenApi();
 
     // This provided from Scalar.AspNetCore to support the Scalar test UI for APIs
@@ -137,12 +147,13 @@ if (app.Environment.IsDevelopment())
     {
         opt.WithTitle("Jwt + Refresh Token Auth API");
     });
+    */
 }
 app.UseExceptionHandler(_ => { });
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.MapControllers();
 
 
 
@@ -154,12 +165,13 @@ app.UseAuthorization();
 // It accepts a RegisterRequest object (deserialized automatically from the JSON body)
 // and uses the injected IAccountService to perform registration logic (validation, hashing, saving).
 // If registration succeeds, it returns HTTP 200 OK.
+/*
 app.MapPost("api/account/register", async (RegisterRequest registerRequest, IAccountService accountService) =>
 {
     await accountService.RegistrAsync(registerRequest);
     return Results.Ok();
 });
-
+*/
 
 // ===============================
 // LOGIN ENDPOINT
@@ -169,11 +181,14 @@ app.MapPost("api/account/register", async (RegisterRequest registerRequest, IAcc
 // It receives the user's email and password from the request body (LoginRequest).
 // The IAccountService validates credentials and issues JWT + refresh tokens (as HttpOnly cookies).
 // If login succeeds, it returns HTTP 200 OK.
+/*
 app.MapPost("api/account/login", async (LoginRequest loginRequest, IAccountService accountService) =>
 {
     await accountService.LoginAsync(loginRequest);
     return Results.Ok();
 });
+*/
+
 
 
 // ===============================
@@ -184,12 +199,16 @@ app.MapPost("api/account/login", async (LoginRequest loginRequest, IAccountServi
 // It retrieves the refresh token from the client's cookies.
 // Then, the IAccountService validates the refresh token, generates a new JWT, and updates the cookie.
 // If successful, returns HTTP 200 OK.
+/*
 app.MapPost("api/account/refresh", async (HttpContext context, IAccountService accountService) =>
 {
     var refreshToken = context.Request.Cookies["REFRESH_TOKEN"];
     await accountService.RefreshTokenAsync(refreshToken);
     return Results.Ok();
 });
+*/
+
+
 
 
 // ===============================
@@ -199,9 +218,10 @@ app.MapPost("api/account/refresh", async (HttpContext context, IAccountService a
 // Example of a protected route.
 // Requires a valid JWT token to access (added by .RequireAuthorization()).
 // If authorized, it returns a simple list of movies.
+/*
 app.MapGet("api/movies", () => Results.Ok(new List<string> { "Matrix" }))
    .RequireAuthorization();
-
+*/
 
 
 app.Run();
