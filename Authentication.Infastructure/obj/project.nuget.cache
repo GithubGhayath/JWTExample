@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v140fc/Y6mg=",
+  "dgSpecHash": "hv6H7qVjnAw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWT Example\\Authentication.Infastructure\\Authentication.Infastructure.csproj",
+  "projectFilePath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWTRepo\\JWTExample\\Authentication.Infastructure\\Authentication.Infastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ghaya\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ghaya\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

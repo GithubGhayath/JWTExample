@@ -15,3 +15,21 @@ C:\Users\ghaya\OneDrive\Desktop\JWT Example\Authentication.Infastructure\obj\Deb
 C:\Users\ghaya\OneDrive\Desktop\JWT Example\Authentication.Infastructure\obj\Debug\net9.0\Authenti.4B6C1AAD.Up2Date
 C:\Users\ghaya\OneDrive\Desktop\JWT Example\Authentication.Infastructure\bin\Debug\net9.0\Authentication.Application.dll
 C:\Users\ghaya\OneDrive\Desktop\JWT Example\Authentication.Infastructure\bin\Debug\net9.0\Authentication.Application.pdb
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\bin\Debug\net9.0\Authentication.Infastructure.deps.json
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\bin\Debug\net9.0\Authentication.Infastructure.dll
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\bin\Debug\net9.0\Authentication.Infastructure.pdb
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\bin\Debug\net9.0\Authentication.Application.dll
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\bin\Debug\net9.0\Authentication.Domain.dll
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\bin\Debug\net9.0\Authentication.Domain.pdb
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\bin\Debug\net9.0\Authentication.Application.pdb
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\obj\Debug\net9.0\Authentication.Infastructure.csproj.AssemblyReference.cache
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\obj\Debug\net9.0\Authentication.Infastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\obj\Debug\net9.0\Authentication.Infastructure.AssemblyInfoInputs.cache
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\obj\Debug\net9.0\Authentication.Infastructure.AssemblyInfo.cs
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\obj\Debug\net9.0\Authentication.Infastructure.csproj.CoreCompileInputs.cache
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\obj\Debug\net9.0\Authentication.Infastructure.sourcelink.json
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\obj\Debug\net9.0\Authenti.4B6C1AAD.Up2Date
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\obj\Debug\net9.0\Authentication.Infastructure.dll
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\obj\Debug\net9.0\refint\Authentication.Infastructure.dll
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\obj\Debug\net9.0\Authentication.Infastructure.pdb
+C:\Users\ghaya\OneDrive\Desktop\JWTRepo\JWTExample\Authentication.Infastructure\obj\Debug\net9.0\ref\Authentication.Infastructure.dll

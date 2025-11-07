@@ -2,7 +2,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Authentication.Domain\Authentication.Domain.csproj" />
-    <ProjectReference Include="..\Authentication.Infastructure\Authentication.Infastructure.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

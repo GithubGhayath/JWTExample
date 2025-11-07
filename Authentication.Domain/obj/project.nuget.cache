@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w6vwOTW1PEM=",
+  "dgSpecHash": "zNDVBLjVY5k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWT Example\\Authentication.Domain\\Authentication.Domain.csproj",
+  "projectFilePath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWTRepo\\JWTExample\\Authentication.Domain\\Authentication.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ghaya\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.10\\microsoft.aspnetcore.cryptography.internal.9.0.10.nupkg.sha512",
     "C:\\Users\\ghaya\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\9.0.10\\microsoft.aspnetcore.cryptography.keyderivation.9.0.10.nupkg.sha512",

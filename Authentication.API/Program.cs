@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -121,6 +122,8 @@ builder.Services.AddAuthentication(opt =>
 
 builder.Services.AddAuthorization();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+// To be able to access httpcontext it self we should:
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
@@ -128,12 +131,76 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+
+    // This provided from Scalar.AspNetCore to support the Scalar test UI for APIs
+    app.MapScalarApiReference(opt =>
+    {
+        opt.WithTitle("Jwt + Refresh Token Auth API");
+    });
 }
 app.UseExceptionHandler(_ => { });
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
+
+
+
+// ===============================
+// REGISTER ENDPOINT
+// ===============================
+
+// This endpoint handles new user registration requests.
+// It accepts a RegisterRequest object (deserialized automatically from the JSON body)
+// and uses the injected IAccountService to perform registration logic (validation, hashing, saving).
+// If registration succeeds, it returns HTTP 200 OK.
+app.MapPost("api/account/register", async (RegisterRequest registerRequest, IAccountService accountService) =>
+{
+    await accountService.RegistrAsync(registerRequest);
+    return Results.Ok();
+});
+
+
+// ===============================
+// LOGIN ENDPOINT
+// ===============================
+
+// This endpoint handles user login.
+// It receives the user's email and password from the request body (LoginRequest).
+// The IAccountService validates credentials and issues JWT + refresh tokens (as HttpOnly cookies).
+// If login succeeds, it returns HTTP 200 OK.
+app.MapPost("api/account/login", async (LoginRequest loginRequest, IAccountService accountService) =>
+{
+    await accountService.LoginAsync(loginRequest);
+    return Results.Ok();
+});
+
+
+// ===============================
+// REFRESH TOKEN ENDPOINT
+// ===============================
+
+// This endpoint is used when the access token expires.
+// It retrieves the refresh token from the client's cookies.
+// Then, the IAccountService validates the refresh token, generates a new JWT, and updates the cookie.
+// If successful, returns HTTP 200 OK.
+app.MapPost("api/account/refresh", async (HttpContext context, IAccountService accountService) =>
+{
+    var refreshToken = context.Request.Cookies["REFRESH_TOKEN"];
+    await accountService.RefreshTokenAsync(refreshToken);
+    return Results.Ok();
+});
+
+
+// ===============================
+// PROTECTED RESOURCE EXAMPLE
+// ===============================
+
+// Example of a protected route.
+// Requires a valid JWT token to access (added by .RequireAuthorization()).
+// If authorized, it returns a simple list of movies.
+app.MapGet("api/movies", () => Results.Ok(new List<string> { "Matrix" }))
+   .RequireAuthorization();
 
 
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWT Example\\Authentication.Domain\\Authentication.Domain.csproj": {}
+    "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWTRepo\\JWTExample\\Authentication.Domain\\Authentication.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWT Example\\Authentication.Domain\\Authentication.Domain.csproj": {
+    "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWTRepo\\JWTExample\\Authentication.Domain\\Authentication.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWT Example\\Authentication.Domain\\Authentication.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWTRepo\\JWTExample\\Authentication.Domain\\Authentication.Domain.csproj",
         "projectName": "Authentication.Domain",
-        "projectPath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWT Example\\Authentication.Domain\\Authentication.Domain.csproj",
+        "projectPath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWTRepo\\JWTExample\\Authentication.Domain\\Authentication.Domain.csproj",
         "packagesPath": "C:\\Users\\ghaya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWT Example\\Authentication.Domain\\obj\\",
+        "outputPath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWTRepo\\JWTExample\\Authentication.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

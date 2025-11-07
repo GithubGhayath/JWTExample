@@ -1109,6 +1109,22 @@
           "buildTransitive/Mono.TextTemplating.targets": {}
         }
       },
+      "Scalar.AspNetCore/2.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.ClientModel/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -3707,6 +3723,25 @@
         "readme.md"
       ]
     },
+    "Scalar.AspNetCore/2.10.1": {
+      "sha512": "G0lG8iDaxhGa5+m5BsG6oW+6VV1XOZPQmHTpRriYZEQpzg9gQMBzR5sFKxiun8BUEdpYzf9NRv9Y/0NOjb+iZQ==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.10.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net10.0/Scalar.AspNetCore.dll",
+        "lib/net10.0/Scalar.AspNetCore.xml",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.10.1.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
     "System.ClientModel/1.0.0": {
       "sha512": "I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw==",
       "type": "package",
@@ -4764,7 +4799,8 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 9.0.10",
       "Microsoft.AspNetCore.OpenApi >= 9.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.10",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.10"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.10",
+      "Scalar.AspNetCore >= 2.10.1"
     ]
   },
   "packageFolders": {
@@ -4774,11 +4810,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWT Example\\Authentication.API\\Authentication.API.csproj",
+      "projectUniqueName": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWTRepo\\JWTExample\\Authentication.API\\Authentication.API.csproj",
       "projectName": "Authentication.API",
-      "projectPath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWT Example\\Authentication.API\\Authentication.API.csproj",
+      "projectPath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWTRepo\\JWTExample\\Authentication.API\\Authentication.API.csproj",
       "packagesPath": "C:\\Users\\ghaya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWT Example\\Authentication.API\\obj\\",
+      "outputPath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWTRepo\\JWTExample\\Authentication.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4799,8 +4835,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWT Example\\Authentication.Infastructure\\Authentication.Infastructure.csproj": {
-              "projectPath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWT Example\\Authentication.Infastructure\\Authentication.Infastructure.csproj"
+            "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWTRepo\\JWTExample\\Authentication.Infastructure\\Authentication.Infastructure.csproj": {
+              "projectPath": "C:\\Users\\ghaya\\OneDrive\\Desktop\\JWTRepo\\JWTExample\\Authentication.Infastructure\\Authentication.Infastructure.csproj"
             }
           }
         }
@@ -4838,6 +4874,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[9.0.10, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.10.1, )"
           }
         },
         "imports": [
